@@ -1,0 +1,24 @@
+/* ============================================================
+   Whispers Beneath the Wisteria — responsive.css
+   Mobile & tablet overrides.
+   ============================================================ */
+
+@media (max-width: 800px){
+  .two-col{ grid-template-columns:1fr; }
+  .scrap-grid{ grid-template-columns:repeat(2,1fr); }
+  .job-grid{ grid-template-columns:repeat(2,1fr); }
+  .timer-grid{ grid-template-columns:repeat(3,1fr); }
+  .notes-grid{ columns:1 260px; }
+  section{ padding:10vh 6vw; }
+}
+
+@media (max-width: 700px){
+  #chapter-nav{ display:none; }
+}
+
+@media (max-width: 480px){
+  .pocket-watch{ --size:120px; }
+  #watch-dock .dock-timer{ display:none; }
+  .tree-wrap{ height:440px; }
+  .plaque{ width:190px; }
+}
