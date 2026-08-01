@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Whispers Beneath the Wisteria &mdash; for Anushikha</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Quicksand:wght@400;500;600&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<div id="sky"></div>
+<div id="stars"></div>
+<div id="petal-layer"></div>
+<div id="firefly-layer"></div>
+<div id="bird-layer"></div>
+
+<nav id="chapter-nav">
+  <button data-target="ch-ace" title="Ace">&#128062;</button>
+  <button data-target="ch-meeting" title="First Meeting">&#127799;</button>
+  <button data-target="ch-temple" title="Temple">&#9961;</button>
+  <button data-target="ch-little" title="Little Things">&#129293;</button>
+  <button data-target="ch-gallery" title="Gallery">&#127912;</button>
+  <button data-target="ch-letter" title="Letter">&#128140;</button>
+  <button data-target="ch-casper" title="Casper">&#128054;</button>
+  <button data-target="ch-storm" title="Storms">&#127783;</button>
+  <button data-target="ch-dreams" title="Dreams">&#127804;</button>
+  <button data-target="ch-birthday" title="Birthday">&#127874;</button>
+  <button data-target="ch-holi" title="Holi">&#127752;</button>
+  <button data-target="ch-jantar" title="Jantar Mantar">&#9995;</button>
+  <button data-target="ch-still" title="And Still">&#127769;</button>
+  <button data-target="ch-timer" title="Our Time">&#8987;</button>
+  <button data-target="finale" title="Wisteria Tree">&#127800;</button>
+</nav>
+
+<!-- docked mini pocket-watch / music / timer widget, appears once the journey begins -->
+<div id="watch-dock">
+  <span class="dock-watch-icon">&#8987;</span>
+  <span class="dock-timer" id="dock-timer">0d</span>
+  <button id="dock-play" title="Play / pause music">&#9658;</button>
+  <input type="range" id="dock-volume" min="0" max="1" step="0.05" value="0.6" title="Volume">
+</div>
+
+<section id="intro">
+  <p class="for-name">For Anushikha</p>
+  <h1 class="site-title">Whispers Beneath<br/>the Wisteria</h1>
+  <p class="subline">a story written for you, by Srijan</p>
+  <p id="whisper-line" class="whisper-line serif">Take my hand. There's something I've been wanting to show you.</p>
+
+  <div id="watch-stage">
+    <div class="pocket-watch" id="pocket-watch">
+      <div class="watch-chain"></div>
+      <div class="watch-body">
+        <div class="watch-engraving">A &#9825; S<br/>04 &bull; 10 &bull; 2025</div>
+      </div>
+      <div class="watch-lid" id="watch-lid"></div>
+      <div class="watch-face">
+        <span class="journey-label">&#9835; OUR JOURNEY</span>
+        <button class="watch-begin" id="watch-begin">&#9654; Begin</button>
+      </div>
+    </div>
+    <p class="watch-hint" id="watch-hint">tap the watch</p>
+  </div>
+
+  <div class="ace-trigger" id="ace-trigger" title="">
+    <img src="assets/photos/ace.jpg" alt="Ace">
+  </div>
+  <p class="ace-hint hand">Ace was there before any of this began.</p>
+  <div class="scroll-cue" style="position:static; margin-top:1.4rem;"><span></span></div>
+</section>
+
+<main id="story">
+
+<section id="ch-ace">
+  <div class="chapter-inner two-col">
+    <div class="media-frame" style="--tilt:0deg;">
+      <img src="assets/photos/ace.jpg" alt="Ace">
+      <div class="media-cap">Ace &middot; the one who started it all</div>
+    </div>
+    <div>
+      <p class="eyebrow"><span class="icon">&#128062;</span> Where It All Began</p>
+      <h2 class="chapter-title">Ace</h2>
+      <div class="paw-trail">
+        <span>&#128062;</span><span>&#128062;</span><span>&#128062;</span><span>&#128062;</span><span>&#10024;</span>
+      </div>
+      <div class="chapter-text">
+        <p>It still amazes me that our story began because of Ace.</p>
+        <p>A wagging tail, a few conversations, and a little bit of fate quietly brought two strangers together. Neither of us could have imagined that a simple reason to talk would become the beginning of my favourite chapter in life.</p>
+        <p>Sometimes love doesn't make a grand entrance &mdash; it simply walks in on four paws.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ch-meeting">
+  <div class="chapter-inner two-col">
+    <div>
+      <p class="eyebrow"><span class="icon">&#127799;</span> The First Day We Met</p>
+      <h2 class="chapter-title">First Meeting</h2>
+      <div class="chapter-text">
+        <p>I still remember how nervous we both were. There was excitement, awkwardness, and that tiny uncertainty that comes with meeting someone you've been looking forward to.</p>
+        <p>But somehow, within minutes, everything felt effortless. The conversation flowed naturally, the laughter came easily, and the chemistry between us was impossible to ignore.</p>
+        <p>If I could relive one moment exactly as it happened, it would be that day.</p>
+      </div>
+    </div>
+    <div class="media-frame" style="--tilt:2deg;">
+      <img src="assets/photos/first-meeting-sunflower.jpg" alt="First meeting">
+      <div class="media-cap">the day my life got sweeter</div>
+    </div>
+  </div>
+</section>
+
+<section id="ch-temple">
+  <div class="lantern-field">
+    <div class="lantern" style="left:12%; animation-delay:0s;"></div>
+    <div class="lantern" style="left:28%; animation-delay:3s;"></div>
+    <div class="lantern" style="left:48%; animation-delay:6s;"></div>
+    <div class="lantern" style="left:68%; animation-delay:2s;"></div>
+    <div class="lantern" style="left:84%; animation-delay:8s;"></div>
+  </div>
+  <div class="chapter-inner two-col">
+    <div class="media-frame" style="--tilt:0deg;">
+      <img src="assets/photos/temple.jpg" alt="Temple">
+      <div class="media-cap">a quiet kind of blessed</div>
+    </div>
+    <div>
+      <p class="eyebrow"><span class="icon">&#9961;</span> The Walks to the Temple</p>
+      <h2 class="chapter-title">The Temple</h2>
+      <div class="chapter-text">
+        <p>You probably never realised how much those visits meant to me. Walking beside you to the temple wasn't just about where we were going &mdash; it was about who I was with.</p>
+        <p>Those quiet moments, the peaceful walks, and simply having you beside me made me feel like the luckiest person alive.</p>
+        <p>Home stopped being a place. It became a person.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ch-little">
+  <div class="chapter-inner two-col">
+    <div class="media-frame" style="--tilt:-2deg;">
+      <img src="assets/photos/little-things.jpg" alt="little things">
+      <div class="media-cap">just an ordinary afternoon</div>
+    </div>
+    <div>
+      <p class="eyebrow"><span class="icon">&#129293;</span> Love in the Little Things</p>
+      <h2 class="chapter-title">The Small Things</h2>
+      <div class="chapter-text">
+        <p>You have this beautiful habit of making ordinary moments feel extraordinary &mdash; reminding me of something I'd forgotten, helping with the smallest task, simply being there when I needed you.</p>
+        <p>You loved me in ways words often fail to describe. You taught me that love isn't measured by grand gestures. Sometimes it's hidden inside the smallest acts of kindness.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ch-gallery">
+  <div class="chapter-inner" style="max-width:1100px;">
+    <p class="eyebrow"><span class="icon">&#127912;</span> Chapter</p>
+    <h2 class="chapter-title">Gallery</h2>
+    <p class="chapter-text"><p>A scrapbook of the moments too small to name but too good to lose &mdash; the in-between minutes that somehow became my favourite parts of loving you.</p></p>
+    <div class="scrap-grid">
+      <div class="media-frame"><img src="assets/photos/gallery-1.jpg" alt="candid"></div>
+      <div class="media-frame"><img src="assets/photos/gallery-2-artgallery.jpg" alt="the actual art gallery"></div>
+      <div class="media-frame"><img src="assets/photos/gallery-3.jpg" alt="candid"></div>
+      <div class="media-frame"><img src="assets/photos/gallery-4.jpg" alt="candid"></div>
+      <div class="media-frame"><img src="assets/photos/gallery-5-streetdog.jpg" alt="candid with a street dog"></div>
+      <div class="media-frame"><img src="assets/photos/gallery-6-tea.jpg" alt="tea and quiet nights"></div>
+      <div class="media-frame"><img src="assets/photos/gallery-7.jpg" alt="candid"></div>
+    </div>
+  </div>
+</section>
+
+<section id="ch-letter">
+  <div class="chapter-inner" style="justify-items:center; text-align:center;">
+    <p class="eyebrow"><span class="icon">&#128140;</span> Your First Letter</p>
+    <h2 class="chapter-title">A Letter</h2>
+    <p class="chapter-text" style="text-align:center; margin-bottom:1rem;"><p>There are gifts you treasure, and then there are gifts that become a part of you. Even now, every time I think of New Year's Eve, I remember exactly how it felt to open this.</p></p>
+    <div class="envelope" id="envelope">
+      <div class="envelope-body"></div>
+      <div class="letter-paper">
+        <p>My Anushikha,</p>
+        <p>I don't know how to write this without it sounding smaller than it is. So I'll just say it plainly.</p>
+        <p>Thank you for believing in me on days I struggled to believe in myself. Thank you for loving me loudly, and for letting me love you back the same way.</p>
+        <p>You never once asked me to become someone else. Somehow, you just made me want to become better &mdash; steadier, softer, more patient, more like the person you already treat me as.</p>
+        <p>One day we'll look back at this website and laugh at how nervous I was making it. But right now, I just hope it makes you feel exactly as loved as you are.</p>
+        <p class="sign">Always yours, Srijan</p>
+      </div>
+      <div class="envelope-flap"></div>
+      <div class="wax">A&amp;S</div>
+    </div>
+    <p class="envelope-hint">tap the envelope to open it</p>
+  </div>
+</section>
+
+<section id="ch-casper">
+  <div class="chapter-inner two-col">
+    <div>
+      <p class="eyebrow"><span class="icon">&#128054;</span> The Day We Chose Our Dog</p>
+      <h2 class="chapter-title">Casper</h2>
+      <div class="chapter-text">
+        <p>One of my favourite memories will always be the day we went to bring Casper home together.</p>
+        <p>It wasn't just about adopting a dog. It felt like we were building a little piece of our future together.</p>
+        <p>Every time Casper runs around or looks at us with those happy eyes, I'm reminded that one of the happiest days of his life became one of the happiest days of mine &mdash; because you were right there beside me.</p>
+      </div>
+    </div>
+    <div class="media-frame" style="--tilt:0deg;">
+      <img src="assets/photos/casper.jpg" alt="Casper, adoption day">
+      <div class="media-cap">Casper's first ride home</div>
+    </div>
+  </div>
+</section>
+
+<section id="ch-storm">
+  <div class="storm-field" id="storm-field"></div>
+  <div class="storm-flash"></div>
+  <div class="chapter-inner" style="justify-items:center; text-align:center;">
+    <p class="eyebrow"><span class="icon">&#127783;</span> Every Storm We Survived</p>
+    <h2 class="chapter-title">The Storms</h2>
+    <div class="chapter-text" style="text-align:center; max-width:52ch;">
+      <p>We haven't always agreed. We've argued. We've been stubborn. We've frustrated each other more times than we can count.</p>
+      <p>But every disagreement taught us something. Every difficult day made us understand each other a little more. And every single time, we chose each other again.</p>
+      <p>That's what makes us strong &mdash; not the absence of storms, but the decision to keep holding hands through them.</p>
+    </div>
+  </div>
+</section>
+
+<section id="ch-dreams">
+  <div class="chapter-inner two-col">
+    <div class="media-frame" style="--tilt:-2deg;">
+      <img src="assets/photos/dreams-2-clockedin.jpg" alt="clocked in">
+      <div class="media-cap">6 AM, and still showing up</div>
+    </div>
+    <div>
+      <p class="eyebrow"><span class="icon">&#127804;</span> Watching You Chase Your Dreams</p>
+      <h2 class="chapter-title">Your Dreams</h2>
+      <div class="chapter-text">
+        <p>The day you got your first job, I don't think I've ever felt prouder. Watching someone you love achieve something they've worked so hard for is an indescribable feeling.</p>
+        <p>Dr. Anushikha Pathak. Scrubs, surgical caps, thirty-hour stretches, and a tiredness you rarely let show. Your happiness became mine. You deserve every success that comes your way, and I'll always be your biggest cheerleader.</p>
+      </div>
+      <div class="job-strip">
+        <div class="job-grid">
+          <div class="media-frame"><img src="assets/photos/dreams-1.jpg" alt="scrubs"></div>
+          <div class="media-frame"><img src="assets/photos/dreams-3.jpg" alt="scrubs"></div>
+          <div class="media-frame"><img src="assets/photos/dreams-4.jpg" alt="scrubs"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ch-birthday">
+  <div class="confetti-field" id="confetti-field"></div>
+  <div class="chapter-inner two-col">
+    <div class="media-frame" style="--tilt:-2.5deg;">
+      <img src="assets/photos/birthday.jpg" alt="Birthday">
+      <div class="media-cap">happy birthday, Srijoo</div>
+    </div>
+    <div>
+      <p class="eyebrow"><span class="icon">&#127874;</span> The Birthday I'll Never Forget</p>
+      <h2 class="chapter-title">Birthday</h2>
+      <div class="chapter-text">
+        <p>Birthdays come every year. But this one, you made unforgettable.</p>
+        <p>That cake with my childhood photo wasn't just thoughtful &mdash; it reminded me how deeply you know me. How carefully you listen. How beautifully you love.</p>
+        <p>I don't think anyone has ever made me feel as seen as you did that day.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ch-holi">
+  <div class="holi-field" id="holi-field"></div>
+  <div class="chapter-inner two-col">
+    <div class="media-frame" style="--tilt:0deg;">
+      <img src="assets/photos/holi.jpg" alt="Holi">
+      <div class="media-cap">covered in colour, laughing anyway</div>
+    </div>
+    <div>
+      <p class="eyebrow"><span class="icon">&#127752;</span> Chapter</p>
+      <h2 class="chapter-title">Holi</h2>
+      <div class="chapter-text">
+        <p>Yellow in your eyebrows, pink on my sleeve, and neither of us caring that we'd need three showers to feel clean again.</p>
+        <p>That's the thing about you &mdash; you make even the mess of a day feel like something worth keeping a photo of.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ch-jantar">
+  <div class="chapter-inner two-col">
+    <div>
+      <p class="eyebrow"><span class="icon">&#9995;</span> Growing Because of You</p>
+      <h2 class="chapter-title">Jantar Mantar</h2>
+      <div class="chapter-text">
+        <p>Before you, protests were never something I imagined myself being a part of. Then we stood together at Jantar Mantar.</p>
+        <p>What mattered most wasn't just where we were. It was what it represented. You've gently challenged the way I see the world &mdash; helped me become more compassionate, more aware, a better person than I was before I met you.</p>
+        <p>You didn't just become part of my life. You changed it for the better.</p>
+      </div>
+    </div>
+    <div class="media-frame" style="--tilt:2deg;">
+      <img src="assets/photos/jantar-mantar-growth.jpg" alt="growing together">
+      <div class="media-cap">still growing, still us</div>
+    </div>
+  </div>
+</section>
+
+<section id="ch-still">
+  <div class="chapter-inner" style="justify-items:center; text-align:center;">
+    <p class="flourish">&#10022; &#10022; &#10022;</p>
+    <h2 class="chapter-title">And Still&hellip;</h2>
+    <div class="chapter-text" style="text-align:center; max-width:50ch;">
+      <p>If someone asked me what my favourite memory with you is, I don't think I could choose. Because somehow, every ordinary day with you quietly became extraordinary.</p>
+      <p>And if life gave me another chance to begin again, I'd still hope it starts with Ace. And ends beneath our wisteria tree.</p>
+    </div>
+  </div>
+</section>
+
+<section id="ch-timer">
+  <div class="chapter-inner" style="justify-items:center; text-align:center;">
+    <p class="eyebrow"><span class="icon">&#8987;</span> Chapter</p>
+    <h2 class="chapter-title">Us, So Far</h2>
+    <p class="chapter-text"><p>Since the 4th of October, 2025 &mdash; and counting.</p></p>
+    <div class="timer-grid">
+      <div><span class="num" id="t-years">0</span><span class="lbl">years</span></div>
+      <div><span class="num" id="t-months">0</span><span class="lbl">months</span></div>
+      <div><span class="num" id="t-days">0</span><span class="lbl">days</span></div>
+      <div><span class="num" id="t-hours">00</span><span class="lbl">hours</span></div>
+      <div><span class="num" id="t-mins">00</span><span class="lbl">minutes</span></div>
+      <div><span class="num" id="t-secs">00</span><span class="lbl">seconds</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="finale">
+  <div class="moonlight"></div>
+  <p class="eyebrow" style="justify-content:center;"><span class="icon">&#127800;</span> Final Chapter</p>
+  <h2 class="chapter-title">The Wisteria Tree</h2>
+  <p class="tap-tree-hint">tap the tree, when you're ready</p>
+  <div class="tree-wrap" id="tree-wrap">
+    <div class="trunk"></div>
+    <div class="branch b1"></div>
+    <div class="branch b2"></div>
+    <div class="canopy" id="canopy"></div>
+    <div class="plaque" id="plaque">
+      <p class="plaque-pre">&hearts;</p>
+      <p class="plaque-names">Anushikha <span class="heart">&hearts;</span> Srijan</p>
+      <p class="plaque-date">4 October 2025 &mdash; Forever</p>
+    </div>
+    <div class="landed-petal" id="landed-petal"></div>
+    <div class="firefly-final" id="last-firefly"></div>
+    <p class="firefly-hint hand" id="firefly-hint">one more light, if you look closely</p>
+  </div>
+  <div class="mist"></div>
+</section>
+
+</main>
+
+<!-- Final letter modal, triggered by tapping the wisteria tree -->
+<div class="final-letter-modal" id="final-letter-modal">
+  <div class="final-letter-paper">
+    <p>My love, if you've read this far &mdash; thank you for being exactly the reason every one of these chapters exists.</p>
+    <p>Whatever comes next, I want to build it with you, slowly, the same unhurried way we've built all of this.</p>
+    <p class="sign">Always, Srijan</p>
+    <button class="final-letter-close" id="final-letter-close">close</button>
+  </div>
+</div>
+
+<!-- hidden firefly surprise sequence -->
+<div class="surprise-overlay" id="surprise-overlay">
+  <div class="moon"></div>
+  <div class="seq-lines">
+    <p class="seq-line" id="seq1">If this website ever disappears&hellip;</p>
+    <p class="seq-line" id="seq2">If these petals stop falling&hellip;</p>
+    <p class="seq-line" id="seq3">If the music fades away&hellip;</p>
+    <p class="seq-line" id="seq4">Promise me you'll remember one thing.</p>
+    <p class="seq-line" id="seq5">From the moment Ace brought us together&hellip;</p>
+    <p class="seq-line" id="seq6">to the day we brought Casper home&hellip;</p>
+    <p class="seq-line" id="seq7">every road somehow led me back to you.</p>
+  </div>
+</div>
+
+<div class="fade-to-black" id="blackout"></div>
+<div class="closing-line" id="closing-line">
+  <div>
+    <p>the story isn't over.<br/>it's only just beginning.</p>
+    <button class="restart-btn" id="restart-btn">Back to the beginning</button>
+  </div>
+</div>
+
+<!-- Secret room, unlocked by triple-clicking Ace's photo on the opening screen -->
+<div id="secret">
+  <button class="close-secret" id="close-secret">&times;</button>
+  <h2>The Things I Never Say Enough</h2>
+  <p class="secret-sub">you weren't supposed to find this. I'm glad you did anyway.</p>
+  <div class="notes-grid">
+    <div class="note-card">Thank you for making ordinary days feel like adventures.</div>
+    <div class="note-card">Every version of my future that makes me smile has you in it.</div>
+    <div class="note-card">Your laugh is still my favorite sound.</div>
+    <div class="note-card">You are my favorite notification.</div>
+    <div class="note-card">If I could pause one moment forever, it would probably be one where you're smiling at me.</div>
+    <div class="note-card">You never had to be perfect. You only had to be you.</div>
+    <div class="note-card">Thank you for choosing me on the days I wasn't easy to love.</div>
+    <div class="note-card">No matter how busy life gets, I'll always make time for us.</div>
+    <div class="note-card">Every second this timer counts is another second I'm grateful we found each other.</div>
+    <div class="note-card">I don't just love you for who you are&mdash;I love who I become when I'm with you.</div>
+    <div class="note-card">You didn't complete me. You inspired me to become a better version of myself.</div>
+    <div class="note-card">No matter where life takes us, I hope we always find our way back to each other.</div>
+    <div class="note-card">Thank you for turning &ldquo;me&rdquo; into &ldquo;us.&rdquo;</div>
+    <div class="note-card">In every lifetime, I'd still stop to talk about Ace.</div>
+  </div>
+</div>
+
+<!-- Background music: drop your own files in assets/music/ — see README for details -->
+<audio id="bg-music" loop preload="none">
+  <source src="assets/music/our-journey.mp3" type="audio/mpeg">
+</audio>
+<audio id="finale-music" preload="none">
+  <source src="assets/music/finale.mp3" type="audio/mpeg">
+</audio>
+
+<script src="js/petals.js"></script>
+<script src="js/fireflies.js"></script>
+<script src="js/timer.js"></script>
+<script src="js/music.js"></script>
+<script src="js/watch.js"></script>
+<script src="js/gallery.js"></script>
+<script src="js/eastereggs.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
